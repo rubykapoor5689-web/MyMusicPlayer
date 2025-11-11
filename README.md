@@ -73,17 +73,6 @@ MyMusicPlayer/
   img: "images/your-cover.jpg"
 }
 
-**## Local Development**
-
-git clone https://github.com/rubykapoor5689-web/MyMusicPlayer.git
-Open index.html in VS Code → Use Live Server to test.
-
-**Deployment**
-
-Hosted on GitHub Pages
-Auto-deploys on every push to main
-Fast, reliable, and free
+---
 
 
-Made with love by Ruby Kapoor
-MIT License – Fork, use, and enjoy!
