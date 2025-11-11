@@ -3,7 +3,7 @@ export const songs = [
   {
     title: "Chura Liya Hai Tumne",
     artist: "Asha Bhosle, Mohammed Rafi",
-    src: "music/song1.mp3",
+    src: "https://raw.githubusercontent.com/rubykapoor5689-web/MyMusicPlayer/main/music/song1.mp3",
     img: "images/song1.jpg"
   },
   {
@@ -74,4 +74,5 @@ export const songs = [
   }
 
 ];
+
 
