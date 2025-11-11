@@ -12,7 +12,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-900 text-white min-h-screen flex flex-col font-sans">
-
+<div id="loader"
+       class="fixed inset-0 bg-gradient-to-br from-purple-900 via-indigo-900 to-gray-900 flex items-center justify-center z-50 transition-opacity duration-700">
+    <div class="text-center">
+      <!-- Spinning circle -->
+      <div class="w-16 h-16 border-4 border-white border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+      <!-- Pulsing text -->
+      <p class="text-white text-xl font-bold animate-pulse">Loading Music Player…</p>
+    </div>
+  </div>
 <header class="bg-gradient-to-r from-purple-900 to-indigo-900 p-5 text-center shadow-xl flex items-center justify-center gap-4">
   <!-- Circular Logo -->
 <div class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-1 border-white shadow-xl flex-shrink-0">
@@ -92,7 +100,14 @@
 
     <audio id="audio" src=""></audio>
   </footer>
-
+<script>
+    // Hide loader when the page (and all assets) are fully loaded
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      loader.style.opacity = '0';
+      setTimeout(() => loader.remove(), 700); // matches transition duration
+    });
+  </script>
   <!-- Load modules -->
   <script type="module" src="script.js"></script>
 </body>
