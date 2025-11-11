@@ -55,8 +55,8 @@ export const songs = [
     img: "images/song9.jpg"
   },
   {
-    title: "I Love You",
-    artist: "Ash King, Clinton Cerejo",
+    title: "Me rang sharbaton ka",
+    artist: "Atif Aslam, Chinmayi",
     src: "music/song10.mp3",
     img: "images/song10.jpg"
   },
@@ -74,6 +74,7 @@ export const songs = [
   }
 
 ];
+
 
 
 
